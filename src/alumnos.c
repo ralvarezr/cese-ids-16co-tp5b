@@ -25,23 +25,38 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+/**
+ * @brief Estructura constante con la información del almuno Estaban Volentini
+ * 
+ */
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
-
+/**
+ * @brief Estructura constante con la información del almuno Ricardo Alvarez
+ * 
+ */
 static const struct alumno_s RICARDO_ALVAREZ = {
     .apellidos = "ALVAREZ RUCH",
     .nombres = "Ricardo Arturo",
     .documento = "95.786.583",
 };
 
+/**
+ * @brief Arreglo constante con los alumnos.
+ * 
+ */
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
     &RICARDO_ALVAREZ
 };
 
+/**
+ * @brief Cantidad de alumnos dentro de arreglo.
+ * 
+ */
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Definitions of private global variables]=============================*/
